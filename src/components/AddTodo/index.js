@@ -22,7 +22,7 @@ function AddTodo() {
             })
             if (response.ok) {
                 setTodo('')
-                setIsTodoAdded(prev => !prev)
+                setIsTodoAdded(!isTodoAdded)
             }
         } catch (error) {
             console.log(error)
